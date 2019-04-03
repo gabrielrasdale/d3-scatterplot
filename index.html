@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>D3 Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>D3 Demo</h1>
+    <div class="container">
+        <div class="row">
+                <div>
+                        <div className="row">
+                           <div className="col-md-1">
+                             <button type="button" id="play-button" onclick="play()" class="btn btn-primary btn-small white">Play/Pause</button>
+                           </div>
+                          <div className="col-md-1">
+                             <button type="button" id="reset-button" onclick="reset()" class="btn btn-primary btn-small white">Reset</button>
+                           </div>
+                           <div>
+                             <Slider  value={100}/>
+                             <Range />
+                           </div>
+                       </div>
+            <div id="chart-area"></div>
+        </div>
+        </div>
+        
+    </div>
+
+<script src="js/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
